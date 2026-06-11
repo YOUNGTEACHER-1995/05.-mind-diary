@@ -36,8 +36,8 @@ function callGeminiAPI(studentId, studentName, emotion, diaryText) {
     throw new Error("GEMINI_API_KEY가 설정되지 않았습니다.");
   }
   
-  // Gemini 2.5 Flash 모델 사용
-  var url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + apiKey;
+  // Gemini 2.5 Pro 모델 사용
+  var url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=" + apiKey;
   
   var systemInstruction = "당신은 초등학교 선생님입니다. 학생이 쓴 감정 일기를 보고 두 가지를 작성해야 합니다.\n" +
 "1. studentFeedback: 초등학생 입장에서 이해하기 쉬운 어휘를 사용하고, 아주 따뜻하고 다정하며 공감해 주는 위로/격려 메시지. (존댓말 사용)\n" +
